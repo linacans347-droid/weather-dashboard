@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+ <main class="weather-app">
+    <section class="control-panel">
+      <label for="city-select">WEATHER FOR:</label>
+      
+      <select id="city-select">
+  <option value=""></option>
+  <option value="new york">New York</option>
+  <option value="los angeles">Los Angeles</option>
+  <option value="chicago">Chicago</option>
+  <option value="paris">Paris</option>
+  <option value="tokyo">Tokyo</option>
+  <option value="london">London</option>
+</select>
+
+      <button id="get-weather-btn">Get Weather</button>
+    </section>
+
+    <section class="weather-card">
+      <div class="weather-header">
+        <h2 id="location">N/A</h2>
+        <p id="weather-main">N/A</p>
+      </div>
+
+      <div class="weather-main-info">
+        <img id="weather-icon" src="" alt="Weather Icon" />
+        <div class="temp-display">
+          <span id="main-temperature">N/A</span>°C
+        </div>
+      </div>
+      <div class="weather-details">
+        <div class="detail-item">
+          <span class="detail-label">Feels like:</span>
+          <span id="feels-like" class="detail-value">N/A</span>
+        </div>
+
+        <div class="detail-item">
+          <span class="detail-label">Humidity:</span>
+          <span id="humidity" class="detail-value">N/A</span>
+        </div>
+
+        <div class="detail-item">
+          <span class="detail-label">Wind speed:</span>
+          <span id="wind" class="detail-value">N/A</span>
+        </div>
+
+        <div class="detail-item">
+          <span class="detail-label">Wind gust:</span>
+          <span id="wind-gust" class="detail-value">N/A</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
